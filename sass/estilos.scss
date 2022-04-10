@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap");
+@import "header.scss";
+@import url("http://fonts.cdnfonts.com/css/sofia-pro?styles=17636,17632,17634,17638,17628,17626");
 
 :root {
   --color-primary: #ffffff;
@@ -7,6 +8,8 @@
   --color-tex-primary: #0e162b;
   --color-text-secundary: #676a73;
   --color-cuaternary: #face5f;
+  --font-body: "Sofia Pro", sans-serif;
+  --padding-container: 3.6rem;
 }
 
 html {
@@ -21,17 +24,22 @@ html {
 }
 
 body {
-  font-family: "Sunflower", sans-serif;
+  font-family: var(--font-body);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
 p {
   margin: 0;
+  color: var(--color-text-secundary);
+  font-size: 1.6rem;
+  line-height: 22.4px;
+  font-weight: 400;
 }
 
 ul,
@@ -48,3 +56,85 @@ a {
 /* figure {
   margin: 0;
 } */
+
+@mixin title {
+  color: var(--color-tex-primary);
+}
+
+.title {
+  &__h1 {
+    @include title;
+    font-size: 5.4rem;
+    line-height: 54px;
+    font-weight: 600;
+  }
+  &__h2 {
+    @include title;
+    font-size: 3.6rem;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  &__h3 {
+    @include title;
+    font-size: 2.4rem;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__h4 {
+    @include title;
+    font-size: 1.6rem;
+    line-height: 16px;
+    font-weight: 600;
+  }
+}
+
+@mixin btn {
+  background-color: var(--color-terceary);
+  border: none;
+  width: 21.4rem;
+  height: 4.8rem;
+  border-radius: 5rem;
+  padding: 1.2rem 2.4rem;
+}
+
+.btn {
+  &__header {
+    display: flex;
+    align-items: center;
+    @include btn;
+
+    img {
+      width: 2.4rem;
+    }
+
+    span {
+      width: 14.2rem;
+      padding-right: 0.8rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: var(--color-primary);
+    }
+  }
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--color-tex-primary);
+  padding: 0 0.4rem;
+  cursor: pointer;
+  height: 3.5rem;
+  width: 3.5rem;
+
+  span {
+    display: block;
+    background: var(--color-tex-primary);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 0.22rem;
+  }
+}
