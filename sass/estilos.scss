@@ -119,22 +119,35 @@ a {
 }
 
 .nav__menu {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  border: 1px solid var(--color-tex-primary);
-  padding: 0 0.4rem;
   cursor: pointer;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
 
   span {
     display: block;
-    background: var(--color-tex-primary);
-    border-radius: 0.5rem;
-    width: 100%;
-    height: 0.22rem;
+    position: absolute;
+    background-color: var(--color-tex-primary);
+    width: 3rem;
+    height: 0.3rem;
+    /* transition: all 0.2s ease; */
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-tex-primary);
+    }
+    &:before {
+      transform: translateY(-8px);
+      /* transition: all 0.3s 0.1s ease; */
+    }
+    &:after {
+      transform: translateY(8px);
+      /* transition: all 0.3s 0.2s ease; */
+    }
   }
 }

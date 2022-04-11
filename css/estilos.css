@@ -42,10 +42,6 @@
   width: 4rem;
 }
 
-.header__info--text p {
-  /* max-width: 32.6rem; */
-}
-
 .header__title {
   padding: 1.8rem 0;
   width: 30rem;
@@ -276,32 +272,44 @@ a {
 }
 
 .nav__menu {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.5rem;
-  border: 1px solid var(--color-tex-primary);
-  padding: 0 0.4rem;
   cursor: pointer;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .nav__menu span {
   display: block;
-  background: var(--color-tex-primary);
-  border-radius: 0.5rem;
+  position: absolute;
+  background-color: var(--color-tex-primary);
+  width: 3rem;
+  height: 0.3rem;
+  /* transition: all 0.2s ease; */
+}
+
+.nav__menu span:before, .nav__menu span:after {
+  position: absolute;
+  content: "";
   width: 100%;
-  height: 0.22rem;
+  height: 100%;
+  background-color: var(--color-tex-primary);
+}
+
+.nav__menu span:before {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  /* transition: all 0.3s 0.1s ease; */
+}
+
+.nav__menu span:after {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  /* transition: all 0.3s 0.2s ease; */
 }
 /*# sourceMappingURL=estilos.css.map */
