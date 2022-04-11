@@ -1,0 +1,22 @@
+.section__course {
+  .plataforms__item {
+    margin: 0 auto;
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3.6rem;
+    gap: 43.5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    div {
+      height: 10rem;
+      width: 18rem;
+
+      img {
+        height: inherit;
+        width: inherit;
+      }
+    }
+  }
+}
