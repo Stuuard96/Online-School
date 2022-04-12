@@ -1,11 +1,8 @@
 .header {
-  height: 87.2rem;
   background-color: var(--color-primary);
-  margin-top: 9rem;
 
   &__content {
     background: var(--color-secundary);
-    height: 43.4rem;
     .nav {
       /* position: relative; */
       padding: 2rem var(--padding-container);
@@ -21,8 +18,7 @@
 
   &__info {
     margin: 0 auto;
-    height: 37rem;
-
+    overflow: hidden;
     padding: 2.3rem var(--padding-container) 4.1rem;
 
     &--text {
@@ -35,22 +31,16 @@
 
   &__title {
     padding: 1.8rem 0;
-    width: 30rem;
-    height: 13.4rem;
 
     h1 {
-      width: 27rem;
       padding-bottom: 0.8rem;
-    }
-
-    h2 {
-      width: 30rem;
     }
   }
 
   &__figure {
     height: 43.8rem;
     padding: 0 var(--padding-container);
+    overflow: hidden;
 
     .figure__container {
       width: 38.5rem;

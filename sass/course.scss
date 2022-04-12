@@ -1,22 +1,20 @@
-.section__course {
-  .plataforms__item {
-    margin: 0 auto;
-    height: 18rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem 3.6rem;
-    gap: 43.5px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+.course__item {
+  height: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem var(--padding-container);
+  gap: 43.5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
 
-    div {
-      height: 10rem;
-      width: 18rem;
+  &__::-webkit-scrollbar {
+    display: none;
+  }
 
-      img {
-        height: inherit;
-        width: inherit;
-      }
-    }
+  div {
+    height: 10rem;
+    width: 18rem;
   }
 }

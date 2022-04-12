@@ -1,12 +1,9 @@
 .header {
-  height: 87.2rem;
   background-color: var(--color-primary);
-  margin-top: 9rem;
 }
 
 .header__content {
   background: var(--color-secundary);
-  height: 43.4rem;
 }
 
 .header__content .nav {
@@ -29,7 +26,7 @@
 
 .header__info {
   margin: 0 auto;
-  height: 37rem;
+  overflow: hidden;
   padding: 2.3rem var(--padding-container) 4.1rem;
 }
 
@@ -43,22 +40,16 @@
 
 .header__title {
   padding: 1.8rem 0;
-  width: 30rem;
-  height: 13.4rem;
 }
 
 .header__title h1 {
-  width: 27rem;
   padding-bottom: 0.8rem;
-}
-
-.header__title h2 {
-  width: 30rem;
 }
 
 .header__figure {
   height: 43.8rem;
   padding: 0 var(--padding-container);
+  overflow: hidden;
 }
 
 .header__figure .figure__container {
