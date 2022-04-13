@@ -1,14 +1,53 @@
+/*---------------------------Header-------------------------*/
 .header {
   background-color: var(--color-primary);
 
   &__content {
     background: var(--color-secundary);
     .nav {
-      /* position: relative; */
+      background: var(--color-secundary);
       padding: 2rem var(--padding-container);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: fixed;
+      width: 100%;
+      z-index: 50;
+
+      &__menu {
+        width: 100%;
+        padding: 0 var(--padding-container);
+        position: fixed;
+        right: 0;
+        z-index: 40;
+        height: 0;
+        overflow: hidden;
+        top: 60px;
+        opacity: 0.5;
+        transition: ease-in-out all 0.5s;
+
+        ul {
+          background-color: var(--color-text-primary);
+          display: flex;
+          flex-direction: column;
+          font-size: 1.5rem;
+
+          a {
+            display: block;
+            width: 100%;
+            color: var(--color-primary);
+            padding: 2rem;
+            border-bottom: 1px solid var(--color-primary);
+            cursor: default;
+          }
+        }
+      }
+
+      .toggle__menu {
+        height: 291.25px;
+        opacity: 1;
+        transition: ease-in-out all 0.5s;
+      }
 
       h3 {
         width: 14.4rem;
@@ -19,7 +58,7 @@
   &__info {
     margin: 0 auto;
     overflow: hidden;
-    padding: 2.3rem var(--padding-container) 4.1rem;
+    padding: 8.7rem var(--padding-container) 4.1rem;
 
     &--text {
       padding-bottom: 1.8rem;
