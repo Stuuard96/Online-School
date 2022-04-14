@@ -97,8 +97,6 @@ a {
 }
 
 @mixin span {
-  width: 14.2rem;
-  padding-right: 0.8rem;
   font-weight: 400;
   font-size: 1.6rem;
   color: var(--color-primary);
@@ -116,10 +114,19 @@ a {
 
     span {
       @include span;
+      padding-right: 0.8rem;
     }
   }
 
   &__learning {
+    @include btn;
+
+    span {
+      @include span;
+    }
+  }
+
+  &__onlineCurso {
     @include btn;
 
     span {
@@ -199,3 +206,4 @@ a {
 @import "service.scss";
 @import "interface.scss";
 @import "learning.scss";
+@import "onlineCurso.scss";
