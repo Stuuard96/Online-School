@@ -666,13 +666,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 var(--padding-container);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 22px;
 }
 
 .onlineCurso__flex .onlineCurso__container .onlineCurso {
-  padding: 0 var(--padding-container);
   margin: 0 auto;
 }
 

@@ -45,11 +45,11 @@
 
   .onlineCurso__container {
     display: flex;
+    padding: 0 var(--padding-container);
     flex-wrap: wrap;
     gap: 22px;
 
     .onlineCurso {
-      padding: 0 var(--padding-container);
       margin: 0 auto;
 
       &__card {
