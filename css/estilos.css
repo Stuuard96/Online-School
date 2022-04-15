@@ -532,6 +532,7 @@ a {
   border-radius: 2.02rem;
 }
 
+/*----------------------------Learning---------------------*/
 .learning__container .learning__content {
   padding: 4rem var(--padding-container);
 }
@@ -761,6 +762,93 @@ a {
   display: block;
   width: 16rem;
   margin: 1.8rem auto 0;
+}
+
+/*----------------------------Footer---------------------*/
+.footer__container {
+  padding: 4rem 3.6rem 6.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  max-width: 66rem;
+  margin: 0 auto;
+}
+
+.footer__card {
+  width: 28.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.footer__card h4 {
+  font-size: 2rem;
+  line-height: 28px;
+}
+
+.footer__card--title h4 {
+  font-size: 2.4rem;
+  line-height: 24px;
+}
+
+.footer__card--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.footer__card--item p {
+  font-size: 1.6rem;
+  line-height: 22.4px;
+}
+
+.footer__card--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.footer__card--icons div {
+  width: 4.4rem;
+  height: 4.4rem;
+  -webkit-box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__card--icons div i {
+  color: var(--color-terceary);
+  font-size: 2.4rem;
+}
+
+.footer > p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 16px;
+  padding-bottom: 3.4rem;
 }
 
 /* * {
