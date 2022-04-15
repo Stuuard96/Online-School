@@ -11,18 +11,18 @@
       justify-content: space-between;
       align-items: center;
       position: fixed;
+      max-width: 1200px;
       width: 100%;
       z-index: 50;
 
       &__menu {
         width: 100%;
         padding: 0 var(--padding-container);
-        position: fixed;
+        position: absolute;
+        top: 70px;
         right: 0;
-        z-index: 40;
         height: 0;
         overflow: hidden;
-        top: 70px;
         opacity: 0.5;
         transition: ease-in-out all 0.5s;
 

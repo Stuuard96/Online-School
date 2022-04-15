@@ -207,3 +207,12 @@ a {
 @import "interface.scss";
 @import "learning.scss";
 @import "onlineCurso.scss";
+
+//Buscar fallas de desbordamiento
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+} */
