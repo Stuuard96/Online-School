@@ -41,18 +41,16 @@
     }
 
     &__figure {
-      height: 47rem;
-
       &--container {
         position: relative;
-        height: inherit;
+        height: 47rem;
         width: 39.4rem;
         margin: 0 auto;
       }
     }
 
     &__img {
-      background: url("../img/girl-write.png") no-repeat;
+      background: url("../img/background-img-learning.png") no-repeat;
       background-size: cover;
       height: 43.2rem;
       width: 35.8rem;
@@ -71,6 +69,43 @@
       left: 7px;
       bottom: 9px;
       z-index: 10;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 8rem 12rem;
+
+    .learning {
+      &__img {
+        width: 46.7rem;
+        height: 56.4rem;
+        left: 78px;
+      }
+
+      &__figure {
+        &--container {
+          height: 63.85rem;
+          width: 54.5rem;
+        }
+      }
+
+      &__decoration {
+        bottom: 0;
+      }
+
+      &__content {
+        padding: 0;
+        padding-top: 4rem;
+        padding-left: 16.9rem;
+
+        h2 {
+          text-align: left;
+          font-size: 5.4rem;
+          line-height: 54px;
+        }
+      }
     }
   }
 }

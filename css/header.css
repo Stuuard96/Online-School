@@ -23,7 +23,6 @@
 }
 
 .header .nav .nav__menu--icons {
-  padding: 2.4rem 0;
   width: 53rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +92,9 @@
 
 .header__info--text img {
   width: 4rem;
+  padding: 0.8rem;
+  border-radius: 100%;
+  background-color: var(--color-primary);
 }
 
 .header__title {
@@ -129,11 +131,6 @@
   position: absolute;
   top: 11px;
   z-index: 30;
-}
-
-.header__figure .figure__description img {
-  width: 1.8rem;
-  height: 1.8rem;
 }
 
 .header__figure .figure__description p {
@@ -175,7 +172,7 @@
 .header__figure .figure__card img {
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .header__figure .figure__card .card h4 {

@@ -17,7 +17,6 @@
     }
 
     .nav__menu--icons {
-      padding: 2.4rem 0;
       width: 53rem;
       display: flex;
       justify-content: flex-end;
@@ -74,6 +73,9 @@
       padding-bottom: 1.8rem;
       img {
         width: 4rem;
+        padding: 0.8rem;
+        border-radius: 100%;
+        background-color: var(--color-primary);
       }
     }
   }
@@ -113,10 +115,6 @@
         top: 11px;
         z-index: 30;
 
-        img {
-          width: 1.8rem;
-          height: 1.8rem;
-        }
         p {
           font-size: 1.6rem;
           line-height: 16px;
@@ -150,7 +148,7 @@
         img {
           width: 4rem;
           height: 4rem;
-          border-radius: 50%;
+          border-radius: 100%;
         }
 
         .card {

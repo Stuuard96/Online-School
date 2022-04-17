@@ -17,9 +17,11 @@
 }
 
 .onlineCurso__flex .onlineCurso__content--img1 {
-  background: url("../img/avatar.png") no-repeat;
-  height: 36.93px;
-  width: 36.93px;
+  background: url("../img/avatar-imagen-user-1.png") no-repeat;
+  height: 4rem;
+  width: 4rem;
+  background-size: cover;
+  border-radius: 100%;
 }
 
 .onlineCurso__flex .onlineCurso__img2 {
@@ -28,9 +30,11 @@
 }
 
 .onlineCurso__flex .onlineCurso__content--img2 {
-  background: url("../img/avatar-2.png") no-repeat;
-  height: 36.93px;
-  width: 36.93px;
+  background: url("../img/avatar-imagen-user-2.png") no-repeat;
+  height: 4rem;
+  width: 4rem;
+  background-size: cover;
+  border-radius: 100%;
 }
 
 .onlineCurso__flex .onlineCurso__img3 {
@@ -39,9 +43,11 @@
 }
 
 .onlineCurso__flex .onlineCurso__content--img3 {
-  background: url("../img/avatar-3.png") no-repeat;
-  height: 36.93px;
-  width: 36.93px;
+  background: url("../img/avatar-imagen-user-3.png") no-repeat;
+  height: 4rem;
+  width: 4rem;
+  background-size: cover;
+  border-radius: 100%;
 }
 
 .onlineCurso__flex .onlineCurso__container {
