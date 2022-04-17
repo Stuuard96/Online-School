@@ -11,28 +11,36 @@
     ></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/jquery.scrollUp.min.js"></script>
+    <script defer src="js/animatescroll.min.js"></script>
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <nav class="nav">
+    <header class="header" id="header">
+      <nav class="nav">
+        <div class="nav__menu">
           <h3 class="title__h3">World School</h3>
-          <div class="nav__menu">
+          <div class="nav__menu--content">
             <ul>
-              <li><a class="nav__menu--a" href="">Course</a></li>
-              <li><a class="nav__menu--a" href="">About Us</a></li>
-              <li><a class="nav__menu--a" href="">Schiorship</a></li>
-              <li><a class="nav__menu--a" href="">Blog</a></li>
-              <li><a class="nav__menu--a" href="">News</a></li>
+              <li><a href="">Course</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Schiorship</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">News </a></li>
             </ul>
           </div>
-          <div class="nav__bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
+        </div>
+        <div class="nav__menu--icons">
+          <i class="fa-solid fa-bars"></i>
+          <a href="">Sign In</a>
+        </div>
+      </nav>
+      <div class="header__content">
         <div class="header__info">
           <div class="header__info--text">
             <img src="img/emoticon.png" alt="" />
@@ -411,7 +419,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="footer">
         <div class="footer__container">
           <div class="footer__card footer__card--title">
