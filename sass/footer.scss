@@ -65,4 +65,11 @@
     line-height: 16px;
     padding-bottom: 3.4rem;
   }
+
+  @media screen and(min-width: 1440px) {
+    &__container {
+      padding: 8rem 12rem 4rem;
+      max-width: initial;
+    }
+  }
 }

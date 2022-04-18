@@ -130,4 +130,21 @@
     width: 16rem;
     margin: 1.8rem auto 0;
   }
+
+  @media screen and(min-width: 1440px) {
+    padding: 8rem 0 6rem 0;
+
+    h2 {
+      padding: 0;
+    }
+
+    .onlineCurso__container {
+      padding: 6rem 12rem 4rem 12rem;
+      gap: 24px;
+
+      .onlineCurso {
+        width: 38.4rem;
+      }
+    }
+  }
 }

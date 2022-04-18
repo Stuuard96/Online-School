@@ -6,9 +6,16 @@
 
       h2 {
         text-align: center;
-        padding: 0 var(--padding-container) 4rem;
         font-size: 4.1rem;
         line-height: 42px;
+      }
+    }
+
+    &__top {
+      padding: 0 var(--padding-container) 4rem;
+
+      &--icons {
+        display: none;
       }
     }
 
@@ -25,6 +32,61 @@
 
     &__card {
       @include card;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .interface {
+      &__content {
+        padding: 8rem 0 7.2rem 0;
+      }
+
+      &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 12rem 6rem;
+
+        h2 {
+          text-align: left;
+          font-size: 5.4rem;
+          line-height: 54px;
+          font-weight: 600;
+          padding-right: 47.3rem;
+        }
+      }
+
+      &__top--icons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        i {
+          font-size: 5rem;
+
+          &:first-child {
+            transform: rotateY(-180deg);
+          }
+          &:nth-child(2) {
+            color: var(--color-terceary);
+          }
+        }
+      }
+
+      &__info {
+        padding: 0 12rem;
+      }
+
+      &__card {
+        width: 28.2rem;
+        height: 25.4rem;
+
+        .card__img {
+          img {
+            margin: 2.4rem;
+            padding: 1.2rem;
+          }
+        }
+      }
     }
   }
 }

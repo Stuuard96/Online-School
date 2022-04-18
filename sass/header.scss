@@ -49,11 +49,17 @@
           display: flex;
           gap: 34.25px;
 
-          a {
-            font-size: 1.6rem;
-            line-height: 22px;
-            font-weight: 400;
-            color: var(--color-text-primary);
+          li {
+            a {
+              font-size: 1.6rem;
+              line-height: 22px;
+              font-weight: 400;
+              color: var(--color-text-primary);
+            }
+
+            &:first-child a {
+              color: var(--color-terceary);
+            }
           }
         }
       }

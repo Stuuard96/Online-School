@@ -75,11 +75,15 @@
   gap: 34.25px;
 }
 
-.header .nav__menu--content ul a {
+.header .nav__menu--content ul li a {
   font-size: 1.6rem;
   line-height: 22px;
   font-weight: 400;
   color: var(--color-text-primary);
+}
+
+.header .nav__menu--content ul li:first-child a {
+  color: var(--color-terceary);
 }
 
 .header__info {
