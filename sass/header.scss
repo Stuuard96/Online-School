@@ -14,12 +14,17 @@
     i {
       font-size: 1.6rem;
       cursor: pointer;
+      position: absolute;
+      top: 23px;
     }
 
     .nav__menu--icons {
-      width: 53rem;
       display: flex;
       justify-content: flex-end;
+
+      & i:last-child {
+        display: none;
+      }
 
       a {
         display: none;
@@ -38,16 +43,28 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 48px;
 
       &--content {
-        /* height: 0; */
-        /* width: 0; */
+        width: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: var(--color-primary);
         overflow: hidden;
+        transition: ease-in-out all 0.5s;
 
         ul {
           display: flex;
-          gap: 34.25px;
+          flex-direction: column;
+          padding: 7rem 0 0 var(--padding-container);
+          gap: 40px;
+
+          i {
+            position: absolute;
+            top: 23px;
+            right: 36px;
+          }
 
           li {
             a {
@@ -60,20 +77,36 @@
             &:first-child a {
               color: var(--color-terceary);
             }
+
+            &:nth-child(6) a {
+              font-size: 1.6rem;
+              line-height: 22px;
+              font-weight: 400;
+              color: var(--color-terceary);
+              padding: 0.8rem 2.4rem;
+              border: 1px solid;
+              border-radius: 1.2rem;
+            }
           }
         }
       }
 
-      /* .toggle__menu {
-        height: 291.25px;
-        opacity: 1;
+      .toggle__menu {
+        width: 74%;
         transition: ease-in-out all 0.5s;
-      } */
+      }
+
+      .bars__close {
+        display: block;
+        position: absolute;
+        top: 23px;
+      }
     }
   }
 
   &__info {
     padding: 8.7rem var(--padding-container) 4.1rem;
+    background-color: var(--color-secundary);
 
     &--text {
       padding-bottom: 1.8rem;
@@ -194,6 +227,12 @@
         height: 9.6rem;
         width: 91rem;
         align-items: center;
+
+        &--content {
+          ul {
+            gap: 34.25px;
+          }
+        }
       }
 
       .nav__menu--icons {

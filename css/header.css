@@ -20,16 +20,21 @@
 .header .nav i {
   font-size: 1.6rem;
   cursor: pointer;
+  position: absolute;
+  top: 23px;
 }
 
 .header .nav .nav__menu--icons {
-  width: 53rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.header .nav .nav__menu--icons i:last-child {
+  display: none;
 }
 
 .header .nav .nav__menu--icons a {
@@ -54,25 +59,36 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 48px;
-  /* .toggle__menu {
-        height: 291.25px;
-        opacity: 1;
-        transition: ease-in-out all 0.5s;
-      } */
 }
 
 .header .nav__menu--content {
-  /* height: 0; */
-  /* width: 0; */
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: var(--color-primary);
   overflow: hidden;
+  -webkit-transition: ease-in-out all 0.5s;
+  transition: ease-in-out all 0.5s;
 }
 
 .header .nav__menu--content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 34.25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7rem 0 0 var(--padding-container);
+  gap: 40px;
+}
+
+.header .nav__menu--content ul i {
+  position: absolute;
+  top: 23px;
+  right: 36px;
 }
 
 .header .nav__menu--content ul li a {
@@ -86,8 +102,31 @@
   color: var(--color-terceary);
 }
 
+.header .nav__menu--content ul li:nth-child(6) a {
+  font-size: 1.6rem;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-terceary);
+  padding: 0.8rem 2.4rem;
+  border: 1px solid;
+  border-radius: 1.2rem;
+}
+
+.header .nav__menu .toggle__menu {
+  width: 74%;
+  -webkit-transition: ease-in-out all 0.5s;
+  transition: ease-in-out all 0.5s;
+}
+
+.header .nav__menu .bars__close {
+  display: block;
+  position: absolute;
+  top: 23px;
+}
+
 .header__info {
   padding: 8.7rem var(--padding-container) 4.1rem;
+  background-color: var(--color-secundary);
 }
 
 .header__info--text {
@@ -222,6 +261,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .header .nav__menu--content ul {
+    gap: 34.25px;
   }
   .header .nav .nav__menu--icons {
     padding-right: 12rem;

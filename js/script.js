@@ -1,50 +1,27 @@
 /*-------------------variables de clases--------------------*/
-const bars_menu = document.querySelector(".nav__bar");
-const menu = document.querySelector(".nav__menu");
-const cursor = document.querySelectorAll(".nav__menu--a");
-const span__bars = document.querySelectorAll(".nav__bar span");
+const bars__open = document.querySelector("#nav__open");
+const bars__close = document.querySelector("#nav__close");
+const menu = document.querySelector(".nav__menu--content");
+/* const cursor = document.querySelectorAll(".nav__menu--a");
+const span__bars = document.querySelectorAll(".nav__bar span"); */
 
 
 /*------------Ejecución de las funciones---------------------*/
-/* bars_menu.addEventListener("click", animateBars);
-bars_menu.addEventListener("click", toggleMenu); */
-/* bars_menu.addEventListener("click", cursorStyle); */
-/* cursor.addEventListener("click", closeMenu);*/
-
-/* $('.nav__menu--a').click(() => {
-    $('.nav__menu').removeClass('toggle__menu');
-    
-    $('.nav__bar > span').forEach((i,index)=>{
-        i.classList.removeClass("nav__bar--active"+index);
-    });       
-}); */
-
-/* $(document).ready(function(){
-    $(".nav__menu--a").click(function(){
-        $('.nav__menu').removeClass('toggle__menu');
-        for(var i=0;i<$('.nav__bar > span').length;i++){
-            i.classList.removeClass("nav__bar--active"+index);
-           }
-    });
-}); */
-
-
-/* function closeMenu(){
-    menu.classList.remove("toggle__menu");
-    span__bars.forEach( (i, index)=>{
-        i.classList.remove("nav__bar--active"+index)
-    }); 
-} */
-
+bars__open.addEventListener("click", toggleMenu);
+bars__close.addEventListener("click", closeMenu);
 
 /*--------------------Close Menu--------------------------*/
-/* function toggleMenu(){
+function toggleMenu(){
     menu.classList.toggle("toggle__menu");
-} */
+    bars__open.style.display='none';
+    bars__close.style.display='block';
+}
 
-/*--------------Quitar estilo del Cursor-------------------*/
-/* function cursorStyle(){
-    cursor.forEach(i=>i.style.setProperty('cursor', 'pointer'));
-} */
- 
+function closeMenu(){
+    menu.classList.remove("toggle__menu");
+    bars__open.style.display='block'
+    bars__close.style.display='none';
+}
+
+
 
