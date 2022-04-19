@@ -22,10 +22,6 @@
       display: flex;
       justify-content: flex-end;
 
-      & i:last-child {
-        display: none;
-      }
-
       a {
         display: none;
         font-size: 1.6rem;
@@ -46,6 +42,7 @@
 
       &--content {
         width: 0;
+        max-width: 528px;
         position: absolute;
         top: 0;
         right: 0;
@@ -100,6 +97,11 @@
         display: block;
         position: absolute;
         top: 23px;
+      }
+      .open {
+        height: 0;
+        width: 0;
+        opacity: 0;
       }
     }
   }
@@ -229,8 +231,22 @@
         align-items: center;
 
         &--content {
+          width: initial;
+          height: initial;
+          position: initial;
+          background-color: var(--color-secundary);
+
           ul {
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 0;
             gap: 34.25px;
+
+            li {
+              &:nth-child(6) {
+                display: none;
+              }
+            }
           }
         }
       }
