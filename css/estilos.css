@@ -27,6 +27,7 @@ html {
 body {
   font-family: var(--font-body);
   max-width: 1440px !important;
+  overflow-x: hidden !important;
   margin: 0 auto !important;
 }
 
@@ -853,7 +854,7 @@ a {
 }
 
 .onlineCurso__flex .onlineCurso__img1 {
-  background: url("../img/Rectangle-9.png") no-repeat;
+  background: url("../img/platform-imagen-1.png") no-repeat;
   height: 230px;
 }
 
@@ -866,7 +867,7 @@ a {
 }
 
 .onlineCurso__flex .onlineCurso__img2 {
-  background: url("../img/Rectangle-10.png") no-repeat;
+  background: url("../img/platform-imagen-2.png") no-repeat;
   height: 230px;
 }
 
@@ -879,7 +880,7 @@ a {
 }
 
 .onlineCurso__flex .onlineCurso__img3 {
-  background: url("../img/Rectangle-11.png") no-repeat;
+  background: url("../img/platform-imagen-3.png") no-repeat;
   height: 230px;
 }
 
