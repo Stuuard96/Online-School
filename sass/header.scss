@@ -19,9 +19,6 @@
     }
 
     .nav__menu--icons {
-      display: flex;
-      justify-content: flex-end;
-
       a {
         display: none;
         font-size: 1.6rem;
@@ -54,7 +51,7 @@
         ul {
           display: flex;
           flex-direction: column;
-          padding: 7rem 0 0 var(--padding-container);
+          padding: 7rem var(--padding-container);
           gap: 40px;
 
           i {
@@ -90,7 +87,6 @@
 
       .toggle__menu {
         width: 74%;
-        transition: ease-in-out all 0.5s;
       }
 
       .bars__close {

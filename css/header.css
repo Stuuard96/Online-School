@@ -24,15 +24,6 @@
   top: 23px;
 }
 
-.header .nav .nav__menu--icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 .header .nav .nav__menu--icons a {
   display: none;
   font-size: 1.6rem;
@@ -78,7 +69,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 7rem 0 0 var(--padding-container);
+  padding: 7rem var(--padding-container);
   gap: 40px;
 }
 
@@ -111,8 +102,6 @@
 
 .header .nav__menu .toggle__menu {
   width: 74%;
-  -webkit-transition: ease-in-out all 0.5s;
-  transition: ease-in-out all 0.5s;
 }
 
 .header .nav__menu .bars__close {
