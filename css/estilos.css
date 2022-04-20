@@ -172,6 +172,11 @@ a {
 }
 
 /*---------------------------Header-------------------------*/
+.header__content {
+  padding: 8.7rem var(--padding-container) 4.1rem;
+  background-color: var(--color-secundary);
+}
+
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,8 +295,8 @@ a {
 }
 
 .header__info {
-  padding: 8.7rem var(--padding-container) 4.1rem;
-  background-color: var(--color-secundary);
+  /* padding: 8.7rem var(--padding-container) 4.1rem;
+    background-color: var(--color-secundary); */
 }
 
 .header__info--text {
