@@ -1,9 +1,5 @@
 /*---------------------------Header-------------------------*/
 .header {
-  &__content {
-    padding: 8.7rem var(--padding-container) 4.1rem;
-    background-color: var(--color-secundary);
-  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -107,8 +103,8 @@
   }
 
   &__info {
-    /* padding: 8.7rem var(--padding-container) 4.1rem;
-    background-color: var(--color-secundary); */
+    padding: 8.7rem var(--padding-container) 4.1rem;
+    background-color: var(--color-secundary);
 
     &--text {
       padding-bottom: 1.8rem;

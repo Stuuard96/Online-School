@@ -24,6 +24,7 @@ html {
           box-sizing: inherit;
 }
 
+html,
 body {
   font-family: var(--font-body);
   max-width: 1440px !important;
@@ -172,11 +173,6 @@ a {
 }
 
 /*---------------------------Header-------------------------*/
-.header__content {
-  padding: 8.7rem var(--padding-container) 4.1rem;
-  background-color: var(--color-secundary);
-}
-
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,8 +291,8 @@ a {
 }
 
 .header__info {
-  /* padding: 8.7rem var(--padding-container) 4.1rem;
-    background-color: var(--color-secundary); */
+  padding: 8.7rem var(--padding-container) 4.1rem;
+  background-color: var(--color-secundary);
 }
 
 .header__info--text {
@@ -732,10 +728,6 @@ a {
 }
 
 /*----------------------------Learning---------------------*/
-.learning__container {
-  background-color: red;
-}
-
 .learning__container .learning__content {
   padding: 4rem var(--padding-container);
 }
