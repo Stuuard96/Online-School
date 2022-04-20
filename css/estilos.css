@@ -27,7 +27,7 @@ html {
 body {
   font-family: var(--font-body);
   max-width: 1440px !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 h1,
