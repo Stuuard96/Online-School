@@ -727,6 +727,10 @@ a {
 }
 
 /*----------------------------Learning---------------------*/
+.learning__container {
+  background-color: red;
+}
+
 .learning__container .learning__content {
   padding: 4rem var(--padding-container);
 }
@@ -1101,11 +1105,11 @@ a {
   }
 }
 
-* {
+/* * {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-  /* max-width: 1200px !important;
-  margin: 0 auto !important; */
-}
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+} */
 /*# sourceMappingURL=estilos.css.map */
